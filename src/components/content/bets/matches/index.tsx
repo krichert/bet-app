@@ -16,7 +16,7 @@ export const MatchesAcordion = ({ matches, today, day }: { matches: Match[], tod
     const user = useUserContext();
 
     const [isEditMode, setEditMode] = useState(false);
-    const [formData, setFormData] = useState<any>(user ? user.matches : {});
+    const [formData, setFormData] = useState<any>((user && user.matches) ? user.matches : {});
 
     const handleChange = (e: ChangeEvent<any>, matchId: string) => {
         setFormData({
