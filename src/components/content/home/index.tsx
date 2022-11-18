@@ -20,5 +20,6 @@ export const Home = () => {
                 ? <h5 className='text-center'>Przejdź do <Link to="/bets">"moje zakłady"</Link> <br /> by obstawić mecze i zwycięzców!</h5>
                 : <h5 className='text-center'>Jeżeli też chcesz zagrać to <Link to="/sign-up">zarejestruj się</Link>!</h5>
         }
+        <h6 className='text-muted'>@ Echo Kielona</h6>
     </div>
 }

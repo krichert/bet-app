@@ -80,18 +80,22 @@ export const MatchesAcordion = ({ matches, today, day }: { matches: Match[], tod
                             </div>
                             <div className="row d-flex align-items-center">
                                 <div className="col-3 d-flex justify-content-end">{match.teamA}</div>
-                                <div className="col-2 d-flex justify-content-center">
-                                    {isEditMode 
-                                        ? <Form.Control disabled={isInputDisabled(match.date)} name="betA" value={formData && formData[match.id] && formData[match.id].betA} onChange={(e) => handleChange(e, match.id)} />
-                                        : <p className="m-0">{(userMatches && userMatches[match.id] && userMatches[match.id].betA) || 'X'}</p>
-                                    }
-                                </div>
-                                <div className="col-2 d-flex justify-content-center">:</div>
-                                <div className="col-2 d-flex justify-content-center">
-                                    {isEditMode 
-                                        ? <Form.Control disabled={isInputDisabled(match.date)} name="betB" value={formData && formData[match.id] && formData[match.id].betB} onChange={(e) => handleChange(e, match.id)} />
-                                        : <p className="m-0">{(userMatches && userMatches[match.id] && userMatches[match.id].betB) || 'X'}</p>
-                                    }
+                                <div className="col-6 ">
+                                    <div className="row d-flex align-items-center">
+                                        <div className="col-5 d-flex justify-content-center">
+                                            {isEditMode 
+                                                ? <Form.Control disabled={isInputDisabled(match.date)} name="betA" value={formData && formData[match.id] && formData[match.id].betA} onChange={(e) => handleChange(e, match.id)} />
+                                                : <p className="m-0">{(userMatches && userMatches[match.id] && userMatches[match.id].betA) || 'X'}</p>
+                                            }
+                                        </div>
+                                        <div className="col-2 d-flex justify-content-center">:</div>
+                                        <div className="col-5 d-flex justify-content-center">
+                                            {isEditMode 
+                                                ? <Form.Control disabled={isInputDisabled(match.date)} name="betB" value={formData && formData[match.id] && formData[match.id].betB} onChange={(e) => handleChange(e, match.id)} />
+                                                : <p className="m-0">{(userMatches && userMatches[match.id] && userMatches[match.id].betB) || 'X'}</p>
+                                            }
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="col-3">{match.teamB}</div>
                             </div>

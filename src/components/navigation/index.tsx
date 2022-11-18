@@ -25,6 +25,7 @@ export const Navigation = () => {
               className="d-inline-block align-top"
               alt="logo"
             />
+            {user && <span className="mx-2">Bet App</span>}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -36,7 +37,7 @@ export const Navigation = () => {
             {
                 user 
                     ? <>
-                        <Navbar.Brand>Echo {user.nick}!</Navbar.Brand>
+                        <Navbar.Text>Echo {user.nick}!</Navbar.Text>
                         <Nav.Link onClick={handleSignOutClick}>Wyloguj</Nav.Link>
                     </>
                     : <Nav.Link as={Link} to="/sign-in">Logowanie</Nav.Link>
