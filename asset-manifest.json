@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bet-app/static/css/main.85768c17.css",
-    "main.js": "/bet-app/static/js/main.419dbf9d.js",
+    "main.js": "/bet-app/static/js/main.c896af5c.js",
     "static/media/bet-app-icon.png": "/bet-app/static/media/bet-app-icon.1c7b0a450f549f5ab020.png",
     "index.html": "/bet-app/index.html",
     "main.85768c17.css.map": "/bet-app/static/css/main.85768c17.css.map",
-    "main.419dbf9d.js.map": "/bet-app/static/js/main.419dbf9d.js.map"
+    "main.c896af5c.js.map": "/bet-app/static/js/main.c896af5c.js.map"
   },
   "entrypoints": [
     "static/css/main.85768c17.css",
-    "static/js/main.419dbf9d.js"
+    "static/js/main.c896af5c.js"
   ]
 }
