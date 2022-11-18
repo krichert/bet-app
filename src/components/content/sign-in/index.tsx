@@ -40,7 +40,7 @@ export const SignIn = () => {
 
         <Form.Group className="mt-3">
             <Form.Text className="text-muted">
-                Nie posiadasz konta? <Link to="/bet-app/sign-up">Zarejestruj się</Link>!
+                Nie posiadasz konta? <Link to="/sign-up">Zarejestruj się</Link>!
             </Form.Text>
         </Form.Group>
         </Form>

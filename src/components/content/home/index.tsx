@@ -14,11 +14,11 @@ export const Home = () => {
               alt="logo"
             /> Bet App!</h3>
 
-        <h5 className='text-center my-3'><Link to="/bet-app/ranking">Sprawdź</Link> kto aktualnie wygrywa!</h5>
+        <h5 className='text-center my-3'><Link to="/ranking">Sprawdź</Link> kto aktualnie wygrywa!</h5>
         {
             user
-                ? <h5 className='text-center'>Przejdź do <Link to="/bet-app/bets">"moje zakłady"</Link> <br /> by obstawić mecze i zwycięzców!</h5>
-                : <h5 className='text-center'>Jeżeli też chcesz zagrać to <Link to="/bet-app/sign-up">zarejestruj się</Link>!</h5>
+                ? <h5 className='text-center'>Przejdź do <Link to="/bets">"moje zakłady"</Link> <br /> by obstawić mecze i zwycięzców!</h5>
+                : <h5 className='text-center'>Jeżeli też chcesz zagrać to <Link to="/sign-up">zarejestruj się</Link>!</h5>
         }
     </div>
 }

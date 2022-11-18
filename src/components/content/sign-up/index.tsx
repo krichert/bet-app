@@ -62,7 +62,7 @@ export const SignUp = () => {
 
         <Form.Group className="mt-3">
             <Form.Text className="text-muted">
-                Masz ju konto? <Link to="/bet-app/sign-in">Zaloguj się</Link>!
+                Masz ju konto? <Link to="/sign-in">Zaloguj się</Link>!
             </Form.Text>
         </Form.Group>
         </Form>
