@@ -1,0 +1,1 @@
+export const DATABASE_URL = "https://bet-app-fd3b8.firebaseio.com";
