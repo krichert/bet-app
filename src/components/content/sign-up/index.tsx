@@ -2,7 +2,7 @@ import {ChangeEvent, FormEvent, useState} from 'react';
 import {Link} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
+import { getAuth, createUserWithEmailAndPassword, reload } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom';
 import { DATABASE_URL } from '../../../constants';
 
@@ -25,7 +25,9 @@ export const SignUp = () => {
                     method: 'PUT',
                     body: JSON.stringify({
                         nick
-                    })
+                    }) 
+                }).then(() => {
+                    window.location.reload()
                 })
             })
             .then(() => {

@@ -15,7 +15,7 @@ export const WinnerAcordion = ({ isBlocked }: { isBlocked: boolean }) => {
 
     const [winners, setWinners] = useState(null);
     const [isEditMode, setEditMode] = useState(false);
-    const [formData, setFormData] = useState<any>(user ? user.winners : {});
+    const [formData, setFormData] = useState<any>((user &&  user.winners) ? user.winners : {});
 
     const handleChange: ChangeEventHandler<HTMLSelectElement> = (e) => {
         setFormData({

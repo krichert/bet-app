@@ -8,6 +8,6 @@ export const Auth: FC<{ children: ReactNode }>= ({ children }) => {
     return user
         ? <>{children}</>
         :  <div className="m-5 d-flex justify-content-center align-items-center">
-                <h5><Link to="/sign">Zaloguj się</Link> by obstawiać!</h5>
+                <h5><Link to="/sign-in">Zaloguj się</Link> by obstawiać!</h5>
         </div>        
 }
