@@ -9,11 +9,11 @@ export const Content = () => {
   return (
     <div className='p-3'>
         <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/bets' element={<Bets />} />
-            <Route path='/ranking' element={<Ranking />} />
-            <Route path='/sign-in' element={<SignIn />} />
-            <Route path='/sign-up' element={<SignUp />} />
+            <Route path='/bet-app/' element={<Home />} />
+            <Route path='/bet-app/bets' element={<Bets />} />
+            <Route path='/bet-app/ranking' element={<Ranking />} />
+            <Route path='/bet-app/sign-in' element={<SignIn />} />
+            <Route path='/bet-app/sign-up' element={<SignUp />} />
         </Routes>
     </div>
   );

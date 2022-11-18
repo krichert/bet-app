@@ -39,7 +39,8 @@ export const Ranking = () => {
                     : (
                         <ListGroup className="w-50 m-auto">
                             {
-                                [...userWithPoints, ...userWithPoints].map((user, index) => (
+                                // @ts-expect-error
+                                userWithPoints.map((user, index) => (
                                     <ListGroup.Item
                                         as="li"
                                         className={`d-flex justify-content-between align-items-center py-3 ${index === 0 ? 'bg-warning' : ''}`}

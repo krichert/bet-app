@@ -17,7 +17,7 @@ export const Navigation = () => {
 
   return (
     <Navbar collapseOnSelect expand="sm" bg="primary" variant="dark" className='px-3'>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/bet-app">
             <img
               src={logo}
               width="30"
@@ -29,8 +29,8 @@ export const Navigation = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/ranking">Ranking</Nav.Link>
-            {user && <Nav.Link as={Link} to="/bets">Moje zakłady</Nav.Link>}
+            <Nav.Link as={Link} to="/bet-app/ranking">Ranking</Nav.Link>
+            {user && <Nav.Link as={Link} to="/bet-app/bets">Moje zakłady</Nav.Link>}
           </Nav>
           <Nav>
             {
@@ -39,7 +39,7 @@ export const Navigation = () => {
                         <Navbar.Brand>Echo {user.nick}!</Navbar.Brand>
                         <Nav.Link onClick={handleSignOutClick}>Wyloguj</Nav.Link>
                     </>
-                    : <Nav.Link as={Link} to="/sign-in">Logowanie</Nav.Link>
+                    : <Nav.Link as={Link} to="/bet-app/sign-in">Logowanie</Nav.Link>
             }
           </Nav>
         </Navbar.Collapse>
