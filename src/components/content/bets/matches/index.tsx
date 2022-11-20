@@ -84,14 +84,14 @@ export const MatchesAcordion = ({ matches, today, day }: { matches: Match[], tod
                                     <div className="row d-flex align-items-center">
                                         <div className="col-5 d-flex justify-content-center p-0">
                                             {isEditMode 
-                                                ? <Form.Control disabled={isInputDisabled(match.date)} name="betA" value={formData && formData[match.id] && formData[match.id].betA} onChange={(e) => handleChange(e, match.id)} />
+                                                ? <Form.Control disabled={isInputDisabled(match.date)} name="betA" value={formData && formData[match.id] && formData[match.id].betA} onChange={(e) => handleChange(e, match.id)} type="number" />
                                                 : <p className="m-0">{(userMatches && userMatches[match.id] && userMatches[match.id].betA) || 'X'}</p>
                                             }
                                         </div>
                                         <div className="col-2 d-flex justify-content-center">:</div>
                                         <div className="col-5 d-flex justify-content-center p-0">
                                             {isEditMode 
-                                                ? <Form.Control disabled={isInputDisabled(match.date)} name="betB" value={formData && formData[match.id] && formData[match.id].betB} onChange={(e) => handleChange(e, match.id)} />
+                                                ? <Form.Control disabled={isInputDisabled(match.date)} name="betB" value={formData && formData[match.id] && formData[match.id].betB} onChange={(e) => handleChange(e, match.id)} type="number" />
                                                 : <p className="m-0">{(userMatches && userMatches[match.id] && userMatches[match.id].betB) || 'X'}</p>
                                             }
                                         </div>
