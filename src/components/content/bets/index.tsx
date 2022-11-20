@@ -61,7 +61,7 @@ export const Bets = () => {
                 )
                 : (
                     <Accordion defaultActiveKey={today?.format("DD/MM/YYYY")} alwaysOpen>
-                        <WinnerAcordion isBlocked={today ? moment(today).isAfter(firstMatchDate) : true} />
+                        <WinnerAcordion isBlocked={false} />
                         {
                             Object.keys(grouppedMatches).map(matchesDay => (
                                 <MatchesAcordion key={matchesDay} matches={grouppedMatches[matchesDay]} today={today} day={matchesDay} />
