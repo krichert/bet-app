@@ -99,16 +99,13 @@ export const MatchesAcordion = ({ matches, today, day }: { matches: Match[], tod
                                 </div>
                                 <div className="col-3 px-3">{match.teamB}</div>
                             </div>
-                            {match.scoreA && match.scoreB && (
-                                <div className="row">
+                            {(match.scoreA != null && match.scoreB != null) ? (
+                                <div className="row mt-2">
                                     <div className="col d-flex justify-content-center">
                                         <Badge bg="secondary">{match.scoreA} : {match.scoreB}</Badge>
                                     </div>
                                 </div>
-                            )}
-                            <div className="row mt-3 d-flex justify-content-center">
-                                {/* <hr className="w-50"/> */}
-                            </div>
+                            ) : null}
                         </div>
 
                     ))

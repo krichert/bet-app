@@ -21,13 +21,23 @@ export const Ranking = () => {
                 winners
             })
         })
-    });
+    }, []);
 
 
     const userWithPoints = data 
-        // @ts-expect-error
-        ? data.users.map(user => ({ ...user, points: calculateAllPoints(data.matches, user.matches) + calculateAllWinnerPoints(data.winners, user.winners) })).sort((a,b) => a.points > b.points)
+        ? data.users
+            // @ts-expect-error
+            .map(user => ({ ...user, points: calculateAllPoints(data.matches, user.matches) + calculateAllWinnerPoints(data.winners, user.winners) }))
+            // @ts-expect-error
+            .sort(function( a , b){
+                if(a.points > b.points) return 1;
+                if(a.points < b.points) return -1;
+                return 0;
+            })
+            .reverse()
         : [];
+
+        console.log(userWithPoints)
 
     return (
         <>
