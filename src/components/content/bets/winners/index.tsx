@@ -109,17 +109,17 @@ export const WinnerAcordion = ({ isBlocked }: { isBlocked: boolean }) => {
                     ))}
                 </div>
 
-                <div className="row mb-3">
+                {!isBlocked && <div className="row mb-3">
                     <div className='col d-flex justify-content-end'>
                         {isEditMode 
                             ? <>
-                                <Button variant='secondary' onClick={() => setEditMode(false)}>Cancel</Button>
-                                <Button variant='success' onClick={handleSaveClick}>Save</Button>
+                                <Button variant='secondary' onClick={() => setEditMode(false)}>Wyjdź</Button>
+                                <Button variant='success' onClick={handleSaveClick}>Zapisz</Button>
                             </>
                             : <Button onClick={() => setEditMode(true)}>Edytuj</Button>
                         }   
                     </div>
-                </div>
+                </div>}
             </Accordion.Body>
         </Accordion.Item>
     )

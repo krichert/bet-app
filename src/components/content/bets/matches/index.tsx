@@ -79,17 +79,17 @@ export const MatchesAcordion = ({ matches, today, day }: { matches: Match[], tod
                                 </div>
                             </div>
                             <div className="row d-flex align-items-center">
-                                <div className="col-3 d-flex justify-content-end">{match.teamA}</div>
-                                <div className="col-6 ">
+                                <div className="col-3 d-flex justify-content-end px-3">{match.teamA}</div>
+                                <div className="col-6 p-0">
                                     <div className="row d-flex align-items-center">
-                                        <div className="col-5 d-flex justify-content-center">
+                                        <div className="col-5 d-flex justify-content-center p-0">
                                             {isEditMode 
                                                 ? <Form.Control disabled={isInputDisabled(match.date)} name="betA" value={formData && formData[match.id] && formData[match.id].betA} onChange={(e) => handleChange(e, match.id)} />
                                                 : <p className="m-0">{(userMatches && userMatches[match.id] && userMatches[match.id].betA) || 'X'}</p>
                                             }
                                         </div>
                                         <div className="col-2 d-flex justify-content-center">:</div>
-                                        <div className="col-5 d-flex justify-content-center">
+                                        <div className="col-5 d-flex justify-content-center p-0">
                                             {isEditMode 
                                                 ? <Form.Control disabled={isInputDisabled(match.date)} name="betB" value={formData && formData[match.id] && formData[match.id].betB} onChange={(e) => handleChange(e, match.id)} />
                                                 : <p className="m-0">{(userMatches && userMatches[match.id] && userMatches[match.id].betB) || 'X'}</p>
@@ -97,7 +97,7 @@ export const MatchesAcordion = ({ matches, today, day }: { matches: Match[], tod
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-3">{match.teamB}</div>
+                                <div className="col-3 px-3">{match.teamB}</div>
                             </div>
                             {match.scoreA && match.scoreB && (
                                 <div className="row">
@@ -117,8 +117,8 @@ export const MatchesAcordion = ({ matches, today, day }: { matches: Match[], tod
                     <div className='col d-flex justify-content-end'>
                         {isEditMode 
                             ? <>
-                                <Button variant='secondary' onClick={() => setEditMode(false)}>Cancel</Button>
-                                <Button variant='success' onClick={handleSaveClick}>Save</Button>
+                                <Button variant='secondary' onClick={() => setEditMode(false)}>Wyjdź</Button>
+                                <Button variant='success' onClick={handleSaveClick}>Zapisz</Button>
                             </>
                             : <Button onClick={() => setEditMode(true)}>Edytuj</Button>
                         }   

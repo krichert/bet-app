@@ -38,7 +38,7 @@ export const SignUp = () => {
             })
     }
   return (
-    <div className="d-flex flex-column align-items-center">
+    <div className="d-md-flex flex-column align-items-center">
         <Form className='d-flex flex-column' onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicName">
             <Form.Label>Nick</Form.Label>
