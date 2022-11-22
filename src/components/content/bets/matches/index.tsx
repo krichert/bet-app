@@ -33,7 +33,8 @@ export const MatchesAcordion = ({ matches, today, day }: { matches: Match[], tod
     } 
 
     const isInputDisabled = (inputDate: string) => {
-        return today ? moment(today).isAfter(inputDate) : true;
+        const inputDateUtc = moment.utc(inputDate);
+        return today ? moment(today).isAfter(inputDateUtc) : true;
     } 
 
     if (!user) {
