@@ -1,4 +1,4 @@
-import {ChangeEvent, useState} from 'react';
+import {ChangeEvent, useState, useEffect} from 'react';
 import moment, { Moment } from 'moment-timezone';
 import Accordion from 'react-bootstrap/Accordion';
 import Form from 'react-bootstrap/Form';
@@ -36,6 +36,10 @@ export const MatchesAcordion = ({ matches, today, day }: { matches: Match[], tod
         const inputDateUtc = moment.utc(inputDate);
         return today ? moment(today).isAfter(inputDateUtc) : true;
     } 
+
+    useEffect(() => {
+        setFormData((user && user.matches) ? user.matches : {})
+    }, [user])
 
     if (!user) {
         return null;
