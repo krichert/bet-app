@@ -1,12 +1,16 @@
 import {useState, useEffect} from 'react';
-import ListGroup from 'react-bootstrap/ListGroup';
+import moment, { Moment } from 'moment-timezone';
+import Accordion from 'react-bootstrap/Accordion';
 import Badge from 'react-bootstrap/Badge';
 import Spinner from 'react-bootstrap/Spinner';
 import { DATABASE_URL } from '../../../constants';
-import { calculateAllPoints, calculateAllWinnerPoints } from '../../../utils';
+import { calculateAllPoints, calculateAllWinnerPoints, calculatePoints } from '../../../utils';
+import { BadgePoint } from '../bets/badge-point';
+import { Match } from '../bets';
 
 
 export const Ranking = () => {
+    const [today, setToday] = useState<Moment | null>(null);
     const [data, setData] = useState<any>(null);
 
     useEffect(() => {
@@ -23,6 +27,20 @@ export const Ranking = () => {
         })
     }, []);
 
+    useEffect(() => {
+        const now = moment();
+        setToday(now);
+
+        const interval = setInterval(() => {
+            const now = moment();
+            setToday(now);
+        }, 60000);
+
+        return () => {
+            clearInterval(interval);
+        }
+    }, [])
+
 
     const userWithPoints = data 
         ? data.users
@@ -37,7 +55,20 @@ export const Ranking = () => {
             .reverse()
         : [];
 
-        console.log(userWithPoints)
+    // @ts-expect-error
+    const avaiableMatches = data && data.matches && data.matches.filter(match => {
+        const dateUtc = moment.utc(match.date);
+
+        return today ? moment(today).isAfter(dateUtc) : true;
+    }).reverse();
+
+    const getPoints = (match: Match, user:any) => {
+        const betA = user.matches && user.matches[match.id] && user.matches[match.id].betA;
+        const betB = user.matches && user.matches[match.id] && user.matches[match.id].betB;
+    
+        return calculatePoints({ scoreA: match.scoreA, scoreB: match.scoreB, betA, betB });
+    }
+
 
     return (
         <>
@@ -47,28 +78,53 @@ export const Ranking = () => {
                         <div className="m-5 d-flex justify-content-center align-items-center"><Spinner /></div>
                     )
                     : (
-                        <ListGroup className="w-50 m-auto">
+                        <Accordion alwaysOpen>
                             {
                                 // @ts-expect-error
                                 userWithPoints.map((user, index) => (
-                                    <ListGroup.Item
-                                        as="li"
-                                        className={`d-flex justify-content-between align-items-center py-3 ${index === 0 ? 'bg-warning' : ''}`}
+                                    <Accordion.Item
+                                        eventKey={user.nick}
                                         key={user.uid}
                                     >
-                                        <div className={`ms-2 me-auto`}>
+                                        <Accordion.Header>
+                                            <Badge bg={`${index === 0 ? "warning" : "primary"}`} pill>
+                                                {user.points}
+                                            </Badge>
+                                            <div className="mx-2">
+                                                {index === 0 ? <span>👑</span> : null}
+                                            </div>
                                             <div className="fw-bold">{user.nick}</div>
-                                        </div>
-                                        <div className="mx-2">
-                                            {index === 0 ? <span>👑</span> : null}
-                                        </div>
-                                        <Badge bg="primary" pill>
-                                            {user.points}
-                                        </Badge>
-                                    </ListGroup.Item>
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                            {
+                                                // @ts-expect-error
+                                                avaiableMatches && avaiableMatches.map((match) => (
+                                                    <div className="row d-flex align-items-center my-1">
+                                                        <div className="col-6 text-truncate">{match.teamA} : {match.teamB}</div>
+                                                        <div className="col-2 d-flex justify-content-center">
+                                                            <Badge bg="secondary">{match.scoreA}:{match.scoreB}</Badge>
+                                                        </div>
+                                                        <div className="col-2 d-flex justify-content-center">
+                                                            <Badge bg="info">
+                                                                {user.matches && user.matches[match.id] && user.matches[match.id].betA || 'X'}
+                                                                    : 
+                                                                {user.matches && user.matches[match.id] && user.matches[match.id].betB || 'X'}
+                                                             </Badge>
+                                                        </div>
+                                                        <div className="col-2">
+                                                            {match.scoreA != null && match.scoreB != null
+                                                                ? <BadgePoint points={getPoints(match, user)} />
+                                                                : <Badge bg="dark">?</Badge>
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                ))
+                                            }
+                                        </Accordion.Body> 
+                                    </Accordion.Item>
                                 ))
                             }
-                        </ListGroup>
+                        </Accordion>
                     )
             }
         </>
