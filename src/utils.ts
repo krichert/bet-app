@@ -10,6 +10,15 @@ export const calculatePoints = ({
     scoreB: string | null,
 }) => {
     if (betA == null || betB == null || scoreA == null || scoreB == null) {
+        if (scoreA != null && scoreB != null) {
+            const parsedScoreA = parseInt(scoreA);
+            const parsedScoreB = parseInt(scoreB);
+
+            if (parsedScoreA - parsedScoreB === 0) {
+                return 1;
+            }
+        }
+
         return 0;
     }
 
