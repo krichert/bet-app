@@ -56,6 +56,11 @@ export const Ranking = () => {
         : [];
 
     // @ts-expect-error
+    const firstMatchDate: string = data ? data.matches.reduce((acc, curr) => {
+        return moment(curr.date).diff(acc) > 0 ? acc : curr.date;
+    }, data.matches[0] ? data.matches[0].date : ''): '';
+
+    // @ts-expect-error
     const avaiableMatches = data && data.matches && data.matches.filter(match => {
         const dateUtc = moment.utc(match.date);
 
@@ -84,7 +89,7 @@ export const Ranking = () => {
                                 userWithPoints.map((user, index) => (
                                     <Accordion.Item
                                         eventKey={user.nick}
-                                        key={user.uid}
+                                        key={user.nick}
                                     >
                                         <Accordion.Header>
                                             <Badge bg={`${index === 0 ? "warning" : "primary"}`} pill>
@@ -96,10 +101,11 @@ export const Ranking = () => {
                                             <div className="fw-bold">{user.nick}</div>
                                         </Accordion.Header>
                                         <Accordion.Body>
+                                            <h6 className='font-weight-bold'>Mecze <Badge pill bg="dark">{calculateAllPoints(data.matches, user.matches)}</Badge></h6>
                                             {
                                                 // @ts-expect-error
                                                 avaiableMatches && avaiableMatches.map((match) => (
-                                                    <div className="row d-flex align-items-center my-1">
+                                                    <div className="row d-flex align-items-center my-1" key={match.id}>
                                                         <div className="col-6 text-truncate">{match.teamA} : {match.teamB}</div>
                                                         <div className="col-2 d-flex justify-content-center">
                                                             <Badge bg="secondary">{match.scoreA}:{match.scoreB}</Badge>
@@ -114,11 +120,30 @@ export const Ranking = () => {
                                                         <div className="col-2">
                                                             {match.scoreA != null && match.scoreB != null
                                                                 ? <BadgePoint points={getPoints(match, user)} />
-                                                                : <Badge bg="dark">?</Badge>
+                                                                : <Badge pill bg="dark">?</Badge>
                                                             }
                                                         </div>
                                                     </div>
                                                 ))
+                                            }
+                                            <h6 className='font-weight-bold mt-3'>Zwycięzcy <Badge pill bg="dark">{calculateAllWinnerPoints(data.winners, user.winners)}</Badge></h6>
+                                            {
+                                                today 
+                                                    ? moment(today).isAfter(firstMatchDate)
+                                                        ? (
+                                                            <div className="row">
+                                                                {
+                                                                    user.winners && <div className="col-12">Zwycięzca: <b>{user.winners.winner}</b></div>
+                                                                }
+                                                                {
+                                                                    user.winners && Object.keys(user.winners).filter(key => key !== 'winner').map(key => (
+                                                                        <div className="col-6 text-truncate">{key}: <b>{user.winners[key]}</b></div>
+                                                                    ))
+                                                                }
+                                                            </div>
+                                                        )
+                                                        : null
+                                                    : null
                                             }
                                         </Accordion.Body> 
                                     </Accordion.Item>
