@@ -133,11 +133,17 @@ export const Ranking = () => {
                                                         ? (
                                                             <div className="row">
                                                                 {
-                                                                    user.winners && <div className="col-12">Zwycięzca: <b>{user.winners.winner}</b></div>
+                                                                    user.winners && <div className="col-12">
+                                                                        Zwycięzca: <b>{user.winners.winner}</b>                                     
+                                                                        {data.winners && (data.winners.winner != null ? (data.winners.winner === user.winners.winner ? ' ✅' : ' ❌') : null)}
+                                                                        </div>
                                                                 }
                                                                 {
                                                                     user.winners && Object.keys(user.winners).filter(key => key !== 'winner').map(key => (
-                                                                        <div className="col-6 text-truncate">{key}: <b>{user.winners[key]}</b></div>
+                                                                        <div className="col-6 text-truncate">
+                                                                            {key}: <b>{user.winners[key]}</b>
+                                                                            {data.winners && (data.winners[key] != null ? (data.winners[key] === user.winners[key] ? ' ✅' : ' ❌') : null)}
+                                                                        </div>
                                                                     ))
                                                                 }
                                                             </div>

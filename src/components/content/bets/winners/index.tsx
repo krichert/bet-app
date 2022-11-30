@@ -69,7 +69,11 @@ export const WinnerAcordion = ({ isBlocked }: { isBlocked: boolean }) => {
                                         })
                                     }
                                 </Form.Select>
-                                : <p className='text-muted'>{userWinners?.winner || 'nie obstawiono'}</p>
+                                : <p className='text-muted'>
+                                    {userWinners?.winner || 'nie obstawiono'}
+                                    {/* @ts-expect-error */}
+                                    {winners && userWinners && (winners.winner != null && userWinners.winner != null ? (winners.winner === userWinners.winner ? ' ✅' : ' ❌') : null)}
+                                </p>
                             }
                     </Form.Group>
                 </div>
@@ -84,7 +88,10 @@ export const WinnerAcordion = ({ isBlocked }: { isBlocked: boolean }) => {
                                         {/* @ts-expect-error */}
                                         {teams[el].map((team) => <option value={team}>{team}</option>)}
                                     </Form.Select>
-                                    : <p className='text-muted'>{(userWinners && userWinners[el]) || 'nie obstawiono'}</p>
+                                    : <p className='text-muted'>
+                                        {(userWinners && userWinners[el]) || 'nie obstawiono'}  
+                                        {winners && userWinners && (winners[el] != null && userWinners[el] != null ? (winners[el] === userWinners[el] ? ' ✅' : ' ❌') : null)}
+                                    </p>
                                 }
 
                             </Form.Group>
@@ -102,7 +109,10 @@ export const WinnerAcordion = ({ isBlocked }: { isBlocked: boolean }) => {
                                         {/* @ts-expect-error */}
                                         {teams[el].map((team) => <option value={team}>{team}</option>)}
                                     </Form.Select>
-                                    : <p className='text-muted'>{(userWinners && userWinners[el]) || 'nie obstawiono'}</p>
+                                    : <p className='text-muted'>
+                                        {(userWinners && userWinners[el]) || 'nie obstawiono'} 
+                                        {winners && userWinners && (winners[el] != null && userWinners[el] != null ? (winners[el] === userWinners[el] ? ' ✅' : ' ❌') : null)}
+                                    </p>
                                 }
                             </Form.Group>
                         </div>

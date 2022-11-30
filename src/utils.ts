@@ -65,9 +65,9 @@ export const calculateAllWinnerPoints = (winners: any, userWinners: any) => {
     Object.keys(winners).forEach(key => {
         if (winners[key] === userWinners[key]) {
             if (key === 'winner') {
-                   result =+ 10;
+                result = result + 10;
             } else {
-                    result =+ 5;
+                result = result + 5;
             }
         }
     })
