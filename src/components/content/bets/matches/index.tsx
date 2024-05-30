@@ -58,8 +58,8 @@ export const MatchesAcordion = ({ matches, today, day }: { matches: Match[], tod
     const { matches: userMatches } = user;
 
     const getPoints = (match: Match) => {
-        const betA = user.matches && user.matches[match.id] && user.matches[match.id].betA;
-        const betB = user.matches && user.matches[match.id] && user.matches[match.id].betB;
+        const betA = userMatches && userMatches[match.id] && userMatches[match.id].betA;
+        const betB = userMatches && userMatches[match.id] && userMatches[match.id].betB;
     
         return calculatePoints({ scoreA: match.scoreA, scoreB: match.scoreB, betA, betB });
     }
@@ -67,7 +67,7 @@ export const MatchesAcordion = ({ matches, today, day }: { matches: Match[], tod
     return (
         <Accordion.Item eventKey={day}>
             <Accordion.Header>
-                <Badge className="mx-3" bg="secondary">{calculateAllPoints(matches, user.matches)}</Badge> Mecze {day} 
+                <Badge className="mx-3" bg={calculateAllPoints(matches, userMatches) > 0 ? 'primary' : 'secondary'}>{calculateAllPoints(matches, userMatches)}</Badge> Mecze {day} 
             </Accordion.Header>
             <Accordion.Body>
                 {

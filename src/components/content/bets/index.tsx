@@ -40,7 +40,11 @@ export const Bets = () => {
         fetch(`${DATABASE_URL}/matches.json`)
             .then(r => r.json())
             .then(matchesObj => {
-                const formattedMatches = Object.keys(matchesObj).map((key) => ({ ...matchesObj[key], id: key}));
+                const formattedMatches = Object.keys(matchesObj).map((key) => ({ 
+                    ...matchesObj[key], 
+                    id: key, 
+                    scoreA: matchesObj[key].scoreA ? matchesObj[key].scoreA: null, 
+                    scoreB: matchesObj[key].scoreB ? matchesObj[key].scoreB: null}));
                 setMatches(formattedMatches);
             })
     }, []);

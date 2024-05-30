@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import { HashRouter } from 'react-router-dom';
 import { initializeApp } from 'firebase/app';
 
-import { store } from './app/store';
 import App from './App';
 
 import './index.css';
@@ -27,10 +26,8 @@ initializeApp(firebaseConfig);
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-        <HashRouter>
-            <App />
-        </HashRouter>
-    </Provider>
+    <HashRouter>
+        <App />
+    </HashRouter>
   </React.StrictMode>
 );

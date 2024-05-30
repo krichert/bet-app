@@ -99,7 +99,7 @@ export const WinnerAcordion = ({ isBlocked }: { isBlocked: boolean }) => {
                     ))}
                 </div>
                 <div className="row mb-3">
-                    {['E', 'F', 'G', 'H'].map((el) => (
+                    {['E', 'F'].map((el) => (
                         <div className="col" key={el}>
                             <Form.Group>
                                 <Form.Label>Grupa {el}</Form.Label>

@@ -4,6 +4,7 @@ import { Home } from './home';
 import { Ranking } from './ranking';
 import { SignIn } from './sign-in';
 import { SignUp } from './sign-up';
+import { HallOfFame } from './hall-of-fame';
 
 export const Content = () => {
   return (
@@ -11,6 +12,7 @@ export const Content = () => {
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/bets' element={<Bets />} />
+            <Route path='/halloffame' element={<HallOfFame />} />
             <Route path='/ranking' element={<Ranking />} />
             <Route path='/sign-in' element={<SignIn />} />
             <Route path='/sign-up' element={<SignUp />} />

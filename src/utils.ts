@@ -32,9 +32,9 @@ export const calculatePoints = ({
     }
 
     if (
-        (parsedBetA - parsedBetB > 0 && parsedScoreA - parsedScoreB > 0) 
-        || (parsedBetA - parsedBetB < 0 && parsedScoreA - parsedScoreB < 0) 
-        || (parsedBetA - parsedBetB === 0 && parsedScoreA - parsedScoreB === 0) 
+        (parsedBetA - parsedBetB > 0 && parsedScoreA - parsedScoreB > 0)
+        || (parsedBetA - parsedBetB < 0 && parsedScoreA - parsedScoreB < 0)
+        || (parsedBetA - parsedBetB === 0 && parsedScoreA - parsedScoreB === 0)
     ) {
         return 1;
     }

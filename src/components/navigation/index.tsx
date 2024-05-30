@@ -31,6 +31,7 @@ export const Navigation = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="ranking">Ranking</Nav.Link>
+            <Nav.Link as={Link} to="halloffame">Hala sław</Nav.Link>
             {user && <Nav.Link as={Link} to="/bets">Moje zakłady</Nav.Link>}
           </Nav>
           <Nav>

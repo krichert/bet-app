@@ -1,0 +1,359 @@
+[
+    {
+        "date": "2024-06-14 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Niemcy",
+        "teamB": "Szkocja"
+    },
+    {
+        "date": "2024-06-15 13:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Węgry",
+        "teamB": "Szwajcaria"
+    },
+    {
+        "date": "2024-06-15 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Hiszpania",
+        "teamB": "Chorwacja"
+    },
+    {
+        "date": "2024-06-15 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Włochy",
+        "teamB": "Albania"
+    },
+    {
+        "date": "2024-06-16 13:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Polska",
+        "teamB": "Holandia"
+    },
+    {
+        "date": "2024-06-16 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Słowenia",
+        "teamB": "Dania"
+    },
+    {
+        "date": "2024-06-16 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Serbia",
+        "teamB": "Anglia"
+    },
+    {
+        "date": "2024-06-17 13:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Rumunia",
+        "teamB": "Ukraina"
+    },
+    {
+        "date": "2024-06-17 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Belgia",
+        "teamB": "Słowacja"
+    },
+    {
+        "date": "2024-06-17 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Austria",
+        "teamB": "Francja"
+    },
+    {
+        "date": "2024-06-18 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Turcja",
+        "teamB": "Gruzja"
+    },
+    {
+        "date": "2024-06-18 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Portugalia",
+        "teamB": "Czechy"
+    },
+    {
+        "date": "2024-06-19 13:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Chorwacja",
+        "teamB": "Albania"
+    },
+    {
+        "date": "2024-06-19 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Niemcy",
+        "teamB": "Węgry"
+    },
+    {
+        "date": "2024-06-19 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Szkocja",
+        "teamB": "Szwajcaria"
+    },
+    {
+        "date": "2024-06-20 13:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Słowenia",
+        "teamB": "Serbia"
+    },
+    {
+        "date": "2024-06-20 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Dania",
+        "teamB": "Anglia"
+    },
+    {
+        "date": "2024-06-20 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Hiszpania",
+        "teamB": "Włochy"
+    },
+    {
+        "date": "2024-06-21 13:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Słowacja",
+        "teamB": "Ukraina"
+    },
+    {
+        "date": "2024-06-21 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Polska",
+        "teamB": "Austria"
+    },
+    {
+        "date": "2024-06-21 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Holandia",
+        "teamB": "Francja"
+    },
+    {
+        "date": "2024-06-22 13:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Gruzja",
+        "teamB": "Czechy"
+    },
+    {
+        "date": "2024-06-22 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Turcja",
+        "teamB": "Portugalia"
+    },
+    {
+        "date": "2024-06-22 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Belgia",
+        "teamB": "Rumunia"
+    },
+    {
+        "date": "2024-06-23 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Szwajcaria",
+        "teamB": "Niemcy"
+    },
+    {
+        "date": "2024-06-23 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Szkocja",
+        "teamB": "Węgry"
+    },
+    {
+        "date": "2024-06-24 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Albania",
+        "teamB": "Hiszpania"
+    },
+    {
+        "date": "2024-06-24 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Chorwacja",
+        "teamB": "Włochy"
+    },
+    {
+        "date": "2024-06-25 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Holandia",
+        "teamB": "Austria"
+    },
+    {
+        "date": "2024-06-25 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Francja",
+        "teamB": "Polska"
+    },
+    {
+        "date": "2024-06-25 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Anglia",
+        "teamB": "Słowenia"
+    },
+    {
+        "date": "2024-06-25 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Dania",
+        "teamB": "Serbia"
+    },
+    {
+        "date": "2024-06-26 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Słowacja",
+        "teamB": "Rumunia"
+    },
+    {
+        "date": "2024-06-26 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Ukraina",
+        "teamB": "Belgia"
+    },
+    {
+        "date": "2024-06-26 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Gruzja",
+        "teamB": "Portugalia"
+    },
+    {
+        "date": "2024-06-26 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "Czechy",
+        "teamB": "Turcja"
+    },
+    {
+        "date": "2024-06-29 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "2A",
+        "teamB": "2B"
+    },
+    {
+        "date": "2024-06-29 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "1A",
+        "teamB": "2C"
+    },
+    {
+        "date": "2024-06-30 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "1C",
+        "teamB": "3D/E/F"
+    },
+    {
+        "date": "2024-06-30 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "1B",
+        "teamB": "3A/D/E/F"
+    },
+    {
+        "date": "2024-07-01 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "2D",
+        "teamB": "2E"
+    },
+    {
+        "date": "2024-07-01 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "1F",
+        "teamB": "3A/B/C"
+    },
+    {
+        "date": "2024-07-02 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "1E",
+        "teamB": "3A/B/C/D"
+    },
+    {
+        "date": "2024-07-02 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "1D",
+        "teamB": "2F"
+    },
+    {
+        "date": "2024-07-05 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "X",
+        "teamB": "X"
+    },
+    {
+        "date": "2024-07-05 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "X",
+        "teamB": "X"
+    },
+    {
+        "date": "2024-07-06 16:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "X",
+        "teamB": "X"
+    },
+    {
+        "date": "2024-07-06 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "X",
+        "teamB": "X"
+    },
+    {
+        "date": "2024-07-09 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "X",
+        "teamB": "X"
+    },
+    {
+        "date": "2024-07-10 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "X",
+        "teamB": "X"
+    },
+    {
+        "date": "2024-07-14 19:00:00",
+        "scoreA": false,
+        "scoreB": false,
+        "teamA": "X",
+        "teamB": "X"
+    }
+]

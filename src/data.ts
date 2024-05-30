@@ -1,10 +1,8 @@
 export const teams = {
-    A: ['Katar', 'Ekwador', 'Senegal', 'Holandia'],
-    B: ['Anglia', 'Iran', 'Stany Zjednoczone', 'Walia'],
-    C: ['Argentyna', 'Arabia Saudyjska', 'Meksyk', 'Polska'],
-    D: ['Francja', 'Australia', 'Dania', 'Tunezja'],
-    E: ['Hiszpania', 'Kostaryka', 'Niemcy', 'Japonia'],
-    F: ['Belgia', 'Kanada', 'Maroko', 'Chorwacja'],
-    G: ['Brazylia', 'Serbia', 'Szwajcaria', 'Kamerun'],
-    H: ['Portugalia', 'Ghana', 'Urugwaj', 'Korea Południowa'],
+    A: ['Niemcy', 'Szkocja', 'Węgry', 'Szwajcaria'],
+    B: ['Hiszpania', 'Chorwacja', 'Włochy', 'Albania'],
+    C: ['Słowenia', 'Dania', 'Serbia', 'Anglia'],
+    D: ['Polska', 'Holandia', 'Austra', 'Francja'],
+    E: ['Belgia', 'Słowacja', 'Rumunia', 'Ukraina'],
+    F: ['Turcja', 'Gruzja', 'Portugalia', 'Czechy'],
 }

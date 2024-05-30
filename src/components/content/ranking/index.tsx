@@ -21,7 +21,7 @@ export const Ranking = () => {
         ]).then(([users, matches, winners]) => {
             setData({
                 users,
-                matches,
+                matches: matches.map(m => ({ ...m, scoreA: m.scoreA ? m.scoreA: null, scoreB: m.scoreB ? m.scoreB: null})),
                 winners
             })
         })
@@ -74,6 +74,13 @@ export const Ranking = () => {
         return calculatePoints({ scoreA: match.scoreA, scoreB: match.scoreB, betA, betB });
     }
 
+    const bestUserIndexes = userWithPoints.reduce((indexes: any, user: any, index: number) => {
+        if (indexes.length === 0 || userWithPoints[0].points === user.points) {
+            return [...indexes, index];
+        }
+
+        return indexes;
+    }, []);
 
     return (
         <>
@@ -92,11 +99,11 @@ export const Ranking = () => {
                                         key={user.nick}
                                     >
                                         <Accordion.Header>
-                                            <Badge bg={`${index === 0 ? "warning" : "primary"}`} pill>
+                                            <Badge bg={`${bestUserIndexes.includes(index) ? "warning" : "primary"}`} pill>
                                                 {user.points}
                                             </Badge>
                                             <div className="mx-2">
-                                                {index === 0 ? <span>👑</span> : null}
+                                                {bestUserIndexes.includes(index) ? <span>👑</span> : null}
                                             </div>
                                             <div className="fw-bold">{user.nick}</div>
                                         </Accordion.Header>
