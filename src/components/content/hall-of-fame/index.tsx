@@ -12,7 +12,7 @@ export const HallOfFame = () => {
         <>
             <Image className='offset-4 col-4 mb-5' src={halloffameImg} />
             <Row>
-                <Card className='col m-3 p-0'>
+                <Card className='col-md col-sm-12 m-3 m-sm-0 p-0'>
                     <Card.Img variant="top" src={euro2024Img} />
                     <Card.Body>
                         <Card.Title>Euro 2024</Card.Title>
@@ -22,7 +22,7 @@ export const HallOfFame = () => {
                     </Card.Body>
                 </Card>
 
-                <Card className='col m-3 p-0'>
+                <Card className='col-md col-sm-12 m-3 m-sm-0 p-0'>
                     <Card.Img variant="top" src={mundial2022Img} />
                     <Card.Body>
                         <Card.Title>Mundial 2022</Card.Title>
@@ -35,7 +35,7 @@ export const HallOfFame = () => {
                     </Card.Body>
                 </Card>
 
-                <Card className='col m-3 p-0'>
+                <Card className='col-md col-sm-12 m-3 m-sm-0 p-0'>
                     <Card.Img variant="top" src={mundial2018Img} />
                     <Card.Body>
                         <Card.Title>Mundial 2018</Card.Title>

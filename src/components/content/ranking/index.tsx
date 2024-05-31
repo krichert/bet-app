@@ -99,11 +99,11 @@ export const Ranking = () => {
                                         key={user.nick}
                                     >
                                         <Accordion.Header>
-                                            <Badge bg={`${bestUserIndexes.includes(index) ? "warning" : "primary"}`} pill>
+                                            <Badge bg={`${bestUserIndexes.includes(index) && user.points > 0 ? "warning" : "primary"}`} pill>
                                                 {user.points}
                                             </Badge>
                                             <div className="mx-2">
-                                                {bestUserIndexes.includes(index) ? <span>👑</span> : null}
+                                                {bestUserIndexes.includes(index) && user.points > 0 ? <span>👑</span> : null}
                                             </div>
                                             <div className="fw-bold">{user.nick}</div>
                                         </Accordion.Header>
