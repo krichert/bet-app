@@ -28,7 +28,7 @@ export const calculatePoints = ({
     const parsedScoreB = parseInt(scoreB);
 
     if (parsedBetA === parsedScoreA && parsedBetB === parsedScoreB) {
-        return 3;
+        return 4;
     }
 
     if (
@@ -67,7 +67,7 @@ export const calculateAllWinnerPoints = (winners: any, userWinners: any) => {
             if (key === 'winner') {
                 result = result + 10;
             } else {
-                result = result + 5;
+                result = result + 3;
             }
         }
     })
