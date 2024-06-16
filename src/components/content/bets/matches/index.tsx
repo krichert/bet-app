@@ -45,7 +45,24 @@ export const MatchesAcordion = ({ matches, today, day }: { matches: Match[], tod
         return null;
     }
 
+    const areChangedAlreadyStartedMatches = () => {
+        const now = moment();
+        const alreadyStartedMatchIndexes = matches.filter(match => moment(now).isAfter(moment.utc(match.date))).map(m => m.id);
+
+        const changedMatchIndexes = Object.keys(formData)
+            .map(key => ({ ...formData[key], id: key }))
+            .filter(match => match.betA !== (user.matches[match.id] ? user.matches[match.id].betA : undefined) || (match.betB !== (user.matches[match.id] ? user.matches[match.id].betB : undefined)))
+            .map(m => m.id);
+
+        return changedMatchIndexes.some(i => alreadyStartedMatchIndexes.includes(i));
+    }
+
     const handleSaveClick = () => {
+        if (areChangedAlreadyStartedMatches()) {
+            alert('Mecz, który zmieniasz ju się rozpoczął!');
+            return;
+        }
+
         fetch(`${DATABASE_URL}/users/${user.uid}/matches.json`, {
             method: 'PUT',
             body: JSON.stringify(formData)
