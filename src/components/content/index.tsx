@@ -5,6 +5,7 @@ import { Ranking } from './ranking';
 import { SignIn } from './sign-in';
 import { SignUp } from './sign-up';
 import { HallOfFame } from './hall-of-fame';
+import { Admin } from './admin';
 
 export const Content = () => {
   return (
@@ -14,6 +15,7 @@ export const Content = () => {
             <Route path='/bets' element={<Bets />} />
             <Route path='/halloffame' element={<HallOfFame />} />
             <Route path='/ranking' element={<Ranking />} />
+            <Route path='/admin' element={<Admin />} />
             <Route path='/sign-in' element={<SignIn />} />
             <Route path='/sign-up' element={<SignUp />} />
         </Routes>

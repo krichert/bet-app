@@ -1,0 +1,626 @@
+[
+  {
+    "teamA": "Meksyk",
+    "teamB": "RPA",
+    "date": "2026-06-11T19:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Korea Południowa",
+    "teamB": "Czechy",
+    "date": "2026-06-12T02:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Czechy",
+    "teamB": "RPA",
+    "date": "2026-06-18T16:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Meksyk",
+    "teamB": "Korea Południowa",
+    "date": "2026-06-19T01:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Czechy",
+    "teamB": "Meksyk",
+    "date": "2026-06-25T01:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "RPA",
+    "teamB": "Korea Południowa",
+    "date": "2026-06-25T01:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Kanada",
+    "teamB": "Bośnia i Hercegowina",
+    "date": "2026-06-12T19:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Katar",
+    "teamB": "Szwajcaria",
+    "date": "2026-06-13T19:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Szwajcaria",
+    "teamB": "Bośnia i Hercegowina",
+    "date": "2026-06-18T19:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Kanada",
+    "teamB": "Katar",
+    "date": "2026-06-18T22:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Szwajcaria",
+    "teamB": "Kanada",
+    "date": "2026-06-24T19:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Bośnia i Hercegowina",
+    "teamB": "Katar",
+    "date": "2026-06-24T19:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Brazylia",
+    "teamB": "Maroko",
+    "date": "2026-06-13T22:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Haiti",
+    "teamB": "Szkocja",
+    "date": "2026-06-14T01:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Szkocja",
+    "teamB": "Maroko",
+    "date": "2026-06-19T22:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Brazylia",
+    "teamB": "Haiti",
+    "date": "2026-06-20T00:30:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Szkocja",
+    "teamB": "Brazylia",
+    "date": "2026-06-24T22:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Maroko",
+    "teamB": "Haiti",
+    "date": "2026-06-24T22:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "USA",
+    "teamB": "Paragwaj",
+    "date": "2026-06-13T01:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Australia",
+    "teamB": "Turcja",
+    "date": "2026-06-14T04:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "USA",
+    "teamB": "Australia",
+    "date": "2026-06-19T19:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Turcja",
+    "teamB": "Paragwaj",
+    "date": "2026-06-20T03:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Turcja",
+    "teamB": "USA",
+    "date": "2026-06-26T02:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Paragwaj",
+    "teamB": "Australia",
+    "date": "2026-06-26T02:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Niemcy",
+    "teamB": "Curaçao",
+    "date": "2026-06-14T17:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Wybrzeże Kości Słoniowej",
+    "teamB": "Ekwador",
+    "date": "2026-06-14T23:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Niemcy",
+    "teamB": "Wybrzeże Kości Słoniowej",
+    "date": "2026-06-20T20:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Ekwador",
+    "teamB": "Curaçao",
+    "date": "2026-06-21T00:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Curaçao",
+    "teamB": "Wybrzeże Kości Słoniowej",
+    "date": "2026-06-25T20:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Ekwador",
+    "teamB": "Niemcy",
+    "date": "2026-06-25T20:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Holandia",
+    "teamB": "Japonia",
+    "date": "2026-06-14T20:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Szwecja",
+    "teamB": "Tunezja",
+    "date": "2026-06-15T02:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Holandia",
+    "teamB": "Szwecja",
+    "date": "2026-06-20T17:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Tunezja",
+    "teamB": "Japonia",
+    "date": "2026-06-21T04:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Japonia",
+    "teamB": "Szwecja",
+    "date": "2026-06-25T23:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Tunezja",
+    "teamB": "Holandia",
+    "date": "2026-06-25T23:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Belgia",
+    "teamB": "Egipt",
+    "date": "2026-06-15T19:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Iran",
+    "teamB": "Nowa Zelandia",
+    "date": "2026-06-16T01:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Belgia",
+    "teamB": "Iran",
+    "date": "2026-06-21T19:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Nowa Zelandia",
+    "teamB": "Egipt",
+    "date": "2026-06-22T01:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Egipt",
+    "teamB": "Iran",
+    "date": "2026-06-27T03:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Nowa Zelandia",
+    "teamB": "Belgia",
+    "date": "2026-06-27T03:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Hiszpania",
+    "teamB": "Wyspy Zielonego Przylądka",
+    "date": "2026-06-15T16:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Arabia Saudyjska",
+    "teamB": "Urugwaj",
+    "date": "2026-06-15T22:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Hiszpania",
+    "teamB": "Arabia Saudyjska",
+    "date": "2026-06-21T16:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Urugwaj",
+    "teamB": "Wyspy Zielonego Przylądka",
+    "date": "2026-06-21T22:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Wyspy Zielonego Przylądka",
+    "teamB": "Arabia Saudyjska",
+    "date": "2026-06-27T00:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Urugwaj",
+    "teamB": "Hiszpania",
+    "date": "2026-06-27T00:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Francja",
+    "teamB": "Senegal",
+    "date": "2026-06-16T19:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Irak",
+    "teamB": "Norwegia",
+    "date": "2026-06-16T22:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Francja",
+    "teamB": "Irak",
+    "date": "2026-06-22T21:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Norwegia",
+    "teamB": "Senegal",
+    "date": "2026-06-23T00:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Norwegia",
+    "teamB": "Francja",
+    "date": "2026-06-26T19:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Senegal",
+    "teamB": "Irak",
+    "date": "2026-06-26T19:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Argentyna",
+    "teamB": "Algieria",
+    "date": "2026-06-17T01:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Austria",
+    "teamB": "Jordania",
+    "date": "2026-06-17T04:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Argentyna",
+    "teamB": "Austria",
+    "date": "2026-06-22T17:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Jordania",
+    "teamB": "Algieria",
+    "date": "2026-06-23T03:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Algieria",
+    "teamB": "Austria",
+    "date": "2026-06-28T02:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Jordania",
+    "teamB": "Argentyna",
+    "date": "2026-06-28T02:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Portugalia",
+    "teamB": "DR Kongo",
+    "date": "2026-06-17T17:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Uzbekistan",
+    "teamB": "Kolumbia",
+    "date": "2026-06-18T02:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Portugalia",
+    "teamB": "Uzbekistan",
+    "date": "2026-06-23T17:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Kolumbia",
+    "teamB": "DR Kongo",
+    "date": "2026-06-24T02:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Kolumbia",
+    "teamB": "Portugalia",
+    "date": "2026-06-27T23:30:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "DR Kongo",
+    "teamB": "Uzbekistan",
+    "date": "2026-06-27T23:30:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Anglia",
+    "teamB": "Chorwacja",
+    "date": "2026-06-17T20:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Ghana",
+    "teamB": "Panama",
+    "date": "2026-06-17T23:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Anglia",
+    "teamB": "Ghana",
+    "date": "2026-06-23T20:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Panama",
+    "teamB": "Chorwacja",
+    "date": "2026-06-23T23:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Panama",
+    "teamB": "Anglia",
+    "date": "2026-06-27T21:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "Chorwacja",
+    "teamB": "Ghana",
+    "date": "2026-06-27T21:00:00.000Z",
+    "stage": "group"
+  },
+  {
+    "teamA": "2A",
+    "teamB": "2B",
+    "date": "2026-06-28T19:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "1E",
+    "teamB": "3A/B/C/D/F",
+    "date": "2026-06-29T20:30:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "1F",
+    "teamB": "2C",
+    "date": "2026-06-30T01:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "1C",
+    "teamB": "2F",
+    "date": "2026-06-29T17:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "1I",
+    "teamB": "3C/D/F/G/H",
+    "date": "2026-06-30T21:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "2E",
+    "teamB": "2I",
+    "date": "2026-06-30T17:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "1A",
+    "teamB": "3C/E/F/H/I",
+    "date": "2026-07-01T01:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "1L",
+    "teamB": "3E/H/I/J/K",
+    "date": "2026-07-01T16:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "1D",
+    "teamB": "3B/E/F/I/J",
+    "date": "2026-07-02T00:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "1G",
+    "teamB": "3A/E/H/I/J",
+    "date": "2026-07-01T20:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "2K",
+    "teamB": "2L",
+    "date": "2026-07-02T23:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "1H",
+    "teamB": "2J",
+    "date": "2026-07-02T19:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "1B",
+    "teamB": "3E/F/G/I/J",
+    "date": "2026-07-03T03:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "1J",
+    "teamB": "2H",
+    "date": "2026-07-03T22:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "1K",
+    "teamB": "3D/E/I/J/L",
+    "date": "2026-07-04T01:30:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "2D",
+    "teamB": "2G",
+    "date": "2026-07-03T18:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "W74",
+    "teamB": "W77",
+    "date": "2026-07-04T21:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "W73",
+    "teamB": "W75",
+    "date": "2026-07-04T17:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "W76",
+    "teamB": "W78",
+    "date": "2026-07-05T20:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "W79",
+    "teamB": "W80",
+    "date": "2026-07-06T00:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "W83",
+    "teamB": "W84",
+    "date": "2026-07-06T19:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "W81",
+    "teamB": "W82",
+    "date": "2026-07-07T00:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "W86",
+    "teamB": "W88",
+    "date": "2026-07-07T16:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "W85",
+    "teamB": "W87",
+    "date": "2026-07-07T20:00:00.000Z",
+    "stage": "finals"
+  },
+  {
+    "teamA": "W89",
+    "teamB": "W90",
+    "date": "2026-07-09T20:00:00.000Z",
+    "stage": "quater-final"
+  },
+  {
+    "teamA": "W93",
+    "teamB": "W94",
+    "date": "2026-07-10T19:00:00.000Z",
+    "stage": "quater-final"
+  },
+  {
+    "teamA": "W91",
+    "teamB": "W92",
+    "date": "2026-07-11T21:00:00.000Z",
+    "stage": "quater-final"
+  },
+  {
+    "teamA": "W95",
+    "teamB": "W96",
+    "date": "2026-07-12T01:00:00.000Z",
+    "stage": "quater-final"
+  },
+  {
+    "teamA": "W97",
+    "teamB": "W98",
+    "date": "2026-07-14T19:00:00.000Z",
+    "stage": "semi-final"
+  },
+  {
+    "teamA": "W99",
+    "teamB": "W100",
+    "date": "2026-07-15T19:00:00.000Z",
+    "stage": "semi-final"
+  },
+  {
+    "teamA": "L101",
+    "teamB": "L102",
+    "date": "2026-07-18T21:00:00.000Z",
+    "stage": "final-3"
+  },
+  {
+    "teamA": "W101",
+    "teamB": "W102",
+    "date": "2026-07-19T19:00:00.000Z",
+    "stage": "final"
+  }
+]
