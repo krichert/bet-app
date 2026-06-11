@@ -20,7 +20,22 @@ export const Admin = () => {
     fetch(`${DATABASE_URL}/matches.json`)
       .then((r) => r.json())
       .then((obj) => {
-        setMatchesObj(obj);
+        // coerce numeric scores to strings, keep missing scores as null
+        const normalized: any = Object.fromEntries(
+          Object.keys(obj).map((key) => {
+            const item = obj[key] || {};
+            return [
+              key,
+              {
+                ...item,
+                scoreA: item.scoreA != null ? String(item.scoreA) : null,
+                scoreB: item.scoreB != null ? String(item.scoreB) : null,
+              },
+            ];
+          }),
+        );
+
+        setMatchesObj(normalized);
       });
   }, [authenticated]);
 
@@ -76,7 +91,7 @@ export const Admin = () => {
   }, {});
 
   const handleScoreChange = (id: string, field: string, value: string) => {
-    const newVal = value === "" ? null : Number(value);
+    const newVal = value === "" ? null : value;
     setMatchesObj({
       ...matchesObj,
       [id]: { ...matchesObj[id], [field]: newVal },
