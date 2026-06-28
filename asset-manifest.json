@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bet-app/static/css/main.85768c17.css",
-    "main.js": "/bet-app/static/js/main.dfbf736a.js",
+    "main.js": "/bet-app/static/js/main.33dcadd5.js",
     "static/media/mundial2026.png": "/bet-app/static/media/mundial2026.77f5c6410e33d3b9f748.png",
     "static/media/halloffame.png": "/bet-app/static/media/halloffame.ef4487caf3bc3ccec0df.png",
     "static/media/euro2024.jpeg": "/bet-app/static/media/euro2024.7a29f8f714f69027438d.jpeg",
@@ -11,10 +11,10 @@
     "static/media/mundial2022.jpeg": "/bet-app/static/media/mundial2022.c71d8f180a7f359baf7e.jpeg",
     "index.html": "/bet-app/index.html",
     "main.85768c17.css.map": "/bet-app/static/css/main.85768c17.css.map",
-    "main.dfbf736a.js.map": "/bet-app/static/js/main.dfbf736a.js.map"
+    "main.33dcadd5.js.map": "/bet-app/static/js/main.33dcadd5.js.map"
   },
   "entrypoints": [
     "static/css/main.85768c17.css",
-    "static/js/main.dfbf736a.js"
+    "static/js/main.33dcadd5.js"
   ]
 }
