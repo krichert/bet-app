@@ -128,7 +128,10 @@ export const Admin = () => {
         </div>
       </div>
 
-      <Accordion alwaysOpen>
+      <Accordion
+        defaultActiveKey={moment().tz("Europe/Warsaw").format("DD/MM/YYYY")}
+        alwaysOpen
+      >
         {Object.keys(grouppedMatches)
           .slice()
           .sort((a, b) =>

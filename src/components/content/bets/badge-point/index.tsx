@@ -2,14 +2,10 @@ import Badge from "react-bootstrap/Badge";
 
 export const BadgePoint = ({ points }: { points: number }) => {
   const getBgColor = () => {
-    switch (points) {
-      case 4:
-        return "success";
-      case 1:
-        return "primary";
-      case 0:
-        return "danger";
-    }
+    if (points > 2) return "success";
+    if (points === 1 || points === 2) return "primary";
+    if (points === 0) return "danger";
+    return "secondary";
   };
 
   return (

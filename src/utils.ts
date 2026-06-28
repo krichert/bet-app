@@ -18,7 +18,7 @@ export const calculatePoints = ({
 
     function isQuarterOrLater(stage?: string | null) {
         const s = (stage || '').toLowerCase();
-        if (s.includes('quarter') || s.includes('semi') || s.includes('final')) return true;
+        if (s.includes('quarter') || s.includes('semi') || s === 'final') return true;
         return false;
     }
 
